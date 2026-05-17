@@ -1,4 +1,4 @@
-# IT Ticketing System Clone - ServiceNow Style
+# IT Ticketing System   
 
 A full-stack ITSM tool with Incident Management, Change Management, SLA, and Approvals.
 
