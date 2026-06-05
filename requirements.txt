@@ -1,0 +1,44 @@
+# ============================================================
+# requirements.txt — Python Utility Scripts Dependencies
+# ============================================================
+# This project is primarily Java + TypeScript, but these Python
+# packages support the utility scripts in scripts/python/.
+#
+# Install: pip install -r requirements.txt
+# Python version required: 3.9+
+# ============================================================
+
+# ── HTTP client for API testing and monitoring ───────────────
+requests==2.32.3          # HTTP library for calling the ITSM-Pro REST API
+requests-toolbelt==1.0.0  # Multipart file upload support
+
+# ── Database connectivity (direct SQL Server access) ─────────
+pyodbc==5.1.0             # ODBC bridge for SQL Server
+sqlalchemy==2.0.35        # ORM/query builder for database utilities
+
+# ── Data processing ──────────────────────────────────────────
+pandas==2.2.2             # CSV/Excel incident report generation
+openpyxl==3.1.5           # Excel file writing (for incident exports)
+
+# ── Environment & config management ──────────────────────────
+python-dotenv==1.0.1      # Reads .env files into os.environ
+pydantic==2.8.2           # Data validation for API response parsing
+
+# ── CLI utilities (for interactive scripts) ──────────────────
+rich==13.8.1              # Beautiful terminal output with colors and tables
+click==8.1.7              # CLI argument parsing for utility scripts
+tabulate==0.9.0           # Print data in table format in terminal
+
+# ── Testing utilities ─────────────────────────────────────────
+pytest==8.3.2             # Test runner for Python utility tests
+pytest-httpx==0.30.0      # Mock HTTP responses in Python tests
+responses==0.25.3         # Mock requests library for testing
+
+# ── Scheduling (for standalone Python cron jobs) ─────────────
+schedule==1.2.2           # Simple Python job scheduling
+
+# ── Example usage of Python utilities ───────────────────────
+# scripts/python/export_incidents.py    — Export incidents to Excel
+# scripts/python/sla_report.py          — Generate SLA compliance PDF
+# scripts/python/bulk_import.py         — Bulk import incidents from CSV
+# scripts/python/api_health_check.py    — Automated API health monitoring
