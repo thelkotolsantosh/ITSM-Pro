@@ -1,0 +1,6 @@
+[submodule "components/backend"]
+	path = components/backend
+	url = https://github.com/thelkotolsantosh/ITSM-Pro-Backend.git
+[submodule "components/frontend"]
+	path = components/frontend
+	url = https://github.com/thelkotolsantosh/itsm-pro-frontend.git
